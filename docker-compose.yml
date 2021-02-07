@@ -1,0 +1,10 @@
+
+version: "3.7"
+services:
+  php:
+    build: ./docker/php
+    hostname: 'localhost'
+    volumes:
+      - ../src:/usr/locl/src/:cached
+    working_dir: /usr/local/src/php-jumanpp
+
